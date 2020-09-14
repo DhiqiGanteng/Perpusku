@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="925.0" style="-fx-background-color: #006699;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="perpusku.viewBuku.BukuOverviewController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="14.0" layoutY="78.0" prefHeight="596.0" prefWidth="901.0" AnchorPane.rightAnchor="11.0">
+        <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="594.0" prefWidth="456.0" style="-fx-background-color: #f5fffa;">
+               <children>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="56.0" layoutY="245.0">
+                     <image>
+                        <Image url="@../image/IDBook.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView layoutX="56.0" layoutY="338.0">
+                     <image>
+                        <Image url="@../image/dur.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="56.0" layoutY="292.0">
+                     <image>
+                        <Image url="@../image/Writer.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="idBukuLabel" layoutX="213.0" layoutY="197.0" text="Label" textFill="#006699">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="judulLabel" layoutX="213.0" layoutY="245.0" text="Label" textFill="#006699">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="penulisLabel" layoutX="213.0" layoutY="292.0" text="Label" textFill="#006699">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="durasiLabel" layoutX="213.0" layoutY="338.0" text="Label" textFill="#006699">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Line endX="216.0" layoutX="187.0" layoutY="232.0" startX="-97.5" startY="-2.5" stroke="#006699" />
+                  <Line endX="216.0" layoutX="187.0" layoutY="279.0" startX="-97.5" startY="-2.5" stroke="#006699" />
+                  <Line endX="216.0" layoutX="187.0" layoutY="327.0" startX="-97.5" startY="-2.5" stroke="#006699" />
+                  <Line endX="216.0" layoutX="188.0" layoutY="373.0" startX="-97.5" startY="-2.5" stroke="#006699" AnchorPane.bottomAnchor="220.29289317131042" AnchorPane.leftAnchor="89.79289245605469" AnchorPane.rightAnchor="52.29289245605469" AnchorPane.topAnchor="369.7928931713104" />
+                  <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="56.0" layoutY="197.0">
+                     <image>
+                        <Image url="@../image/idmember.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="128.0" layoutY="35.0" text="Book Detail's" textFill="#5e5e5e">
+                     <font>
+                        <Font name="Modern No. 20" size="32.0" />
+                     </font>
+                  </Label>
+                  <ButtonBar layoutX="147.0" layoutY="532.0" prefHeight="39.0" prefWidth="284.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="530.0">
+                     <buttons>
+                        <Button mnemonicParsing="false" onAction="#handleNewBuku" prefHeight="35.0" prefWidth="83.0" style="-fx-background-color: #ff8c00; -fx-background-radius: 5cm;" text="NEW" textFill="MINTCREAM">
+                           <font>
+                              <Font name="Kokila Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleEditBuku" prefHeight="37.0" prefWidth="67.0" style="-fx-background-radius: 5cm; -fx-background-color: #006699;" text="EDIT" textFill="MINTCREAM">
+                           <font>
+                              <Font name="Kokila Bold" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="95.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleDeleteBuku" prefHeight="37.0" prefWidth="85.0" style="-fx-background-radius: 5cm; -fx-background-color: #DC143C;" text="DELETE" textFill="MINTCREAM">
+                           <font>
+                              <Font name="Kokila Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </buttons>
+                  </ButtonBar>
+                  <Button layoutX="36.0" layoutY="531.0" mnemonicParsing="false" onAction="#handleReport" prefHeight="37.0" prefWidth="102.0" style="-fx-background-radius: 3cm; -fx-background-color: #FFD700; -fx-background-color: ;" text="REPORT" textFill="MINTCREAM" AnchorPane.bottomAnchor="27.0" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="325.0" AnchorPane.topAnchor="530.0">
+                     <font>
+                        <Font name="Kokila Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="bukuTable" prefHeight="594.0" prefWidth="427.0">
+               <columns>
+                  <TableColumn fx:id="idBukuCol" minWidth="0.0" prefWidth="239.0" text="Book ID" />
+                  <TableColumn fx:id="judulCol" minWidth="0.0" prefWidth="230.0" text="Title" />
+               </columns>
+            </TableView>
+        </items>
+      </SplitPane>
+      <Label layoutX="524.0" layoutY="16.0" prefHeight="62.0" prefWidth="132.0" text="Book's">
+         <font>
+            <Font name="Britannic Bold" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="286.0" layoutY="5.0" opacity="0.93" preserveRatio="true">
+         <image>
+            <Image url="@../image/Library_100px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="354.0" layoutY="15.0" prefHeight="51.0" prefWidth="181.0" text="MyLibrary" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Kristen ITC" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="357.0" layoutY="13.0" prefHeight="51.0" prefWidth="213.0" text="MyLibrary" textAlignment="CENTER" textFill="#fffffe" wrapText="true">
+         <font>
+            <Font name="Kristen ITC" size="32.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="56.0" fitWidth="57.0" layoutX="620.0" layoutY="11.0" opacity="0.93" preserveRatio="true">
+         <image>
+            <Image url="@../image/Library_100px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="526.0" layoutY="15.0" prefHeight="62.0" prefWidth="132.0" text="Book's" textFill="#ffb821">
+         <font>
+            <Font name="Britannic Bold" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

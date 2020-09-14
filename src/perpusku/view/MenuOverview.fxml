@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="perpusku.view.MenuOverviewController">
+   <children>
+      <ImageView fitHeight="470.0" fitWidth="927.0" layoutY="-3.0">
+         <image>
+            <Image url="@../image/libra4.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#383e43" height="713.0" layoutX="-10.0" layoutY="-10.0" opacity="0.72" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="937.0" />
+      <Label layoutX="39.0" layoutY="284.0" prefHeight="47.0" prefWidth="198.0" text="Welcome" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="246.0" prefHeight="47.0" prefWidth="57.0" text="HI..." textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="324.0" prefHeight="47.0" prefWidth="388.0" text="TO LIBRARY MANAGEMENT APPLICATION" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MINTCREAM" height="217.0" layoutX="5.0" layoutY="483.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="296.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="483.0" />
+      <Button layoutX="84.0" layoutY="622.0" mnemonicParsing="false" onAction="#handleAnggota" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: #3399FF;" text="Member's" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MINTCREAM" height="217.0" layoutX="326.0" layoutY="483.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="288.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="483.0" />
+      <Button layoutX="396.0" layoutY="622.0" mnemonicParsing="false" onAction="#handleBuku" prefHeight="31.0" prefWidth="147.0" style="-fx-background-color: #3399FF;" text="Book's" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="MINTCREAM" height="217.0" layoutX="642.0" layoutY="483.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="288.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="483.0" />
+      <Button layoutX="713.0" layoutY="622.0" mnemonicParsing="false" onAction="#handleTransaksi" prefHeight="31.0" prefWidth="162.0" style="-fx-background-color: #3399FF;" text="Transaction's" textFill="#fff9f9">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="76.0" fitWidth="77.0" layoutX="796.0" layoutY="14.0" opacity="0.46">
+         <image>
+            <Image url="@../image/Library_100px.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="771.0" layoutY="33.0" prefHeight="42.0" prefWidth="138.0" text="MyLibrary" textAlignment="CENTER" textFill="#7375ff" wrapText="true">
+         <font>
+            <Font name="Kristen ITC" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="770.0" layoutY="31.0" prefHeight="42.0" prefWidth="147.0" text="MyLibrary" textAlignment="CENTER" textFill="#fcfcfc" wrapText="true">
+         <font>
+            <Font name="Kristen ITC" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="107.0" layoutY="510.0" mnemonicParsing="false" onAction="#handleAnggota" prefHeight="42.0" prefWidth="57.0" style="-fx-background-color: #f5fffa;">
+         <graphic>
+            <ImageView fitHeight="85.0" fitWidth="85.0" onKeyPressed="#handleAnggota">
+               <image>
+                  <Image url="@../image/member.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="414.0" layoutY="505.0" mnemonicParsing="false" onAction="#handleBuku" prefHeight="42.0" prefWidth="46.0" style="-fx-background-color: #f5fffa;">
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="96.0" onMouseClicked="#handleBuku">
+               <image>
+                  <Image url="@../image/buku.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="738.0" layoutY="505.0" mnemonicParsing="false" onAction="#handleTransaksi" prefHeight="60.0" prefWidth="96.0" style="-fx-background-color: #f5fffa;">
+         <graphic>
+            <ImageView>
+               <image>
+                  <Image url="@../image/Transaction%20List.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="perpusku.jnlp">
+  <information>
+    <title>perpusku</title>
+    <vendor>17523220</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\xstream-1.4.10.jar" size="589803" download="eager" />
+    <jar href="perpusku.jar" size="331944" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="perpusku" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="perpusku.Perpusku"  name="perpusku" />
+  <update check="always"/>
+</jnlp>
